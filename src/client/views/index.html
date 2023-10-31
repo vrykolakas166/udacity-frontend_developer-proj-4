@@ -27,6 +27,7 @@
         <section>
             <strong>Form Results:</strong>
             <pre id="results"></pre>
+            <div class="loading hide"></div>
         </section>
     </main>
 
@@ -35,12 +36,12 @@
     </footer>
     <script>
         //Check that service workers are supported
-        if ('serviceWorker' in navigator) {
-            // Use the window load event to keep the page load performance
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js');
-            });
-        }
+        // if ('serviceWorker' in navigator) {
+        //     // Use the window load event to keep the page load performance
+        //     window.addEventListener('load', () => {
+        //         navigator.serviceWorker.register('/service-worker.js');
+        //     });
+        // }
     </script>
 </body>
 

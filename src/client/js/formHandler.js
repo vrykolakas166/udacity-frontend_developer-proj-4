@@ -13,6 +13,7 @@ async function handleSubmit(event) {
 
   console.log("::: Form Submitted :::");
   try {
+    document.querySelector(".loading").classList.remove("hide");
     if (Client.isValidUrl(enteredUrl)) {
       const data = await doSentimentAnalysis(enteredUrl);
       if (data) {
@@ -35,6 +36,8 @@ async function handleSubmit(event) {
     }
   } catch (error) {
     alert(error);
+  } finally {
+    document.querySelector(".loading").classList.add("hide");
   }
 }
 
