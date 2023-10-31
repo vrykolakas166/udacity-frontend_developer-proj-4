@@ -11,5 +11,5 @@ This project requires you to build a web tool that allows users to run Natural L
 
 ## Extras
 
-> You can run `npm run test` to execute some unit tests with [Jest](https://jestjs.io/)
-> Or can adjust code to run on development.
+> - You can run `npm run test` to execute some unit tests with [Jest](https://jestjs.io/)
+> - Or can adjust code to run on development.
