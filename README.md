@@ -6,8 +6,8 @@ This project requires you to build a web tool that allows users to run Natural L
 
 ## Instructions
 
-> Clone source and using `npm install` to install dependencies
-> Using `npm run deploy` to start website locally
+> - Clone source and using `npm install` to install dependencies
+> - Using `npm run deploy` to start website locally
 
 ## Extras
 
