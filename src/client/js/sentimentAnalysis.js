@@ -1,6 +1,7 @@
 async function getApiKeyFromServer() {
   try {
-    const res = await fetch("http://localhost:8081/getApiKey");
+    // adjust url on running enviroment
+    const res = await fetch("/getApiKey");
     const data = await res.json();
     return data.api_key;
   } catch (error) {
