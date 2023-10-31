@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hello world</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            UDACITY PROJECT 4
+        </div>
+        <div class="nav-items">
+            <div class="nav-item">Natural language processing</div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <form class="" onsubmit="return Client.handleSubmit(event)">
+                <input id="txtUrl" type="text" name="input" value="" placeholder="https://www.google.com" required />
+                <input type="submit" name="" value="Submit" />
+            </form>
+        </section>
+        <section>
+            <strong>Form Results:</strong>
+            <pre id="results"></pre>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright© 2023</p>
+    </footer>
+    <script>
+        //Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performance
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+
+</html>
